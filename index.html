@@ -1,95 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Calculator</title>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" />
+  <title>Login</title>
+  <link rel="stylesheet" href="script.css">
+
 </head>
 
 <body>
-  <div class="container">
-    <div class=title>
-      Calculator
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
     </div>
-    <table border="1" class="main-container">
-      <tr>
-        <td colspan="3">
-          <input type="text" id="input" placeholder="Input" />
-          <input type="text" id="result" placeholder="Result" />
-        </td>
-        <td>
-          <input type="button" value="CLR." onclick="clr()" class="button" />
-        </td>
-      </tr>
-      <tr>
-        <!-- create button and assign value to each button -->
-        <!-- input("1") will call function input to display value -->
-        <td>
-          <input type="button" value="1" onclick="input('1')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="2" onclick="input('2')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="3" onclick="input('3')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="/" onclick="input('/')" class="button" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="button" value="4" onclick="input('4')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="5" onclick="input('5')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="6" onclick="input('6')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="-" onclick="input('-')" class="button" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="button" value="7" onclick="input('7')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="8" onclick="input('8')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="9" onclick="input('9')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="+" onclick="input('+')" class="button" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="button" value="." onclick="input('.')" class="button" />
-        </td>
-        <td>
-          <input type="button" value="0" onclick="input('0')" class="button" />
-        </td>
-        <!-- solve function call function solve to evaluate value -->
-        <td>
-          <input type="button" value="=" onclick="solve()" class="button" />
-        </td>
-        <td>
-          <input type="button" value="*" onclick="input('*')" class="button" />
-        </td>
-      </tr>
-      <!-- <tr>
-        <td>
-          <input type="button" value="sqrt" onclick="fun() " class="button" />
-        </td>
-      </tr> -->
-    </table>
-  </div>
-  <script src="script.js" type="text/javascript"></script>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+
+    </form>
+  
+  </main>
+  <link rel="stylesheet" href="app.js">
 </body>
 
 </html>
